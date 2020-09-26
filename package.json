@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-seedium",
+  "version": "1.0.0",
+  "description": "Seedium's ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seedium/eslint-config-seedium.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Seedium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seedium/eslint-config-seedium/issues"
+  },
+  "homepage": "https://github.com/seedium/eslint-config-seedium#readme",
+  "peerDependencies": {
+    "eslint": "^7.9.0"
+  }
+}
