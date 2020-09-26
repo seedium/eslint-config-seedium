@@ -2,24 +2,23 @@ module.exports = {
     'plugins': [
         'react'
     ],
-
-    'rules':{
+    'rules': {
         'react/jsx-boolean-value': 'error',
         'react/jsx-closing-bracket-location': 'error',
-        'react/jsx-curly-spacing': ['error', 'never'], //  couses warning 'can't resolve reference #/definitions/basicConfig from id #'
+        'react/jsx-curly-spacing': ['error', 'never'],
         'react/jsx-handler-names': 'error',
-        'react/jsx-indent-props': ['error', 4],
-        'react/jsx-indent': ['error', 4],
+        'react/jsx-indent-props': ['error', 2],
+        'react/jsx-indent': ['error', 2],
         'react/jsx-key': 'error',
         'react/jsx-max-props-per-line': ['error', {maximum: 3}],
         'react/jsx-no-bind': ['error', {
             'ignoreRefs': true,
-            'allowBind': true
+            'allowArrowFunctions': true
         }],
         'react/jsx-no-duplicate-props': 'error',
         'react/jsx-no-undef': 'error',
         'react/jsx-pascal-case': 'error',
-        'react/jsx-uses-react': 'error',
+        'react/jsx-uses-react': 'off',
         'react/jsx-uses-vars': 'error',
         'react/jsx-wrap-multilines':  ['error', {declaration: true, assignment: true, return: true}],
         'react/no-find-dom-node': 'error',
@@ -34,8 +33,8 @@ module.exports = {
         'react/no-multi-comp': 'error',
         'react/no-unknown-property': 'error',
         'react/prefer-es6-class': 'error',
-        'react/prop-types': 'error',
-        'react/react-in-jsx-scope': 'error',
+        'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off',
         'react/self-closing-comp': 'error',
         'react/sort-comp': ['error', {
             'order': [
@@ -48,21 +47,20 @@ module.exports = {
             ]
         }],
         'react/style-prop-object': 'error',
-        'react/no-unused-prop-types': 'error',
+        'react/no-unused-prop-types': 'off',
         'react/no-unescaped-entities': 'error',
         'react/no-children-prop': 'error',
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
         'react/jsx-tag-spacing': 'error',
         'react/require-default-props': 'error',
-        'react/no-array-index-key': 'error',
-        'react/forbid-foreign-prop-types': 'error',
+        'react/forbid-foreign-prop-types': 'off',
         'react/void-dom-elements-no-children': 'error',
         'react/jsx-no-target-blank': 'error',
         'react/jsx-no-comment-textnodes': 'error',
         'react/no-string-refs': 'error',
         'react/no-danger-with-children': 'error',
         'react/no-will-update-set-state': 'error',
-        'react/default-props-match-prop-types': 'error',
+        'react/default-props-match-prop-types': 'off',
         'react/no-redundant-should-component-update': 'error',
         'react/jsx-closing-tag-location': 'error'
     }

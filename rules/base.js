@@ -3,7 +3,6 @@ module.exports = {
     'env': {
         'browser': true,
         'node': true,
-        'mocha': true,
         'es6': true
     },
     'parserOptions': {
@@ -15,7 +14,7 @@ module.exports = {
             'defaultParams': true,
             'destructuring': true,
             'forOf': true,
-            'generators': false,
+            'generators': true,
             'modules': true,
             'objectLiteralComputedProperties': true,
             'objectLiteralDuplicateProperties': false,
@@ -28,7 +27,6 @@ module.exports = {
             'jsx': true
         },
     },
-
     'rules':{
         // New
         'no-useless-escape': 'error',
@@ -41,7 +39,6 @@ module.exports = {
         'no-unsafe-negation': 'error',
         'no-global-assign': 'error',
         'object-curly-newline': ['error', { 'consistent': true }],
-        'function-paren-newline': ['error', 'multiline'],
         'lines-between-class-members': ['error', 'always'],
         'array-callback-return': 'error',
         'default-param-last': 'error',
@@ -50,12 +47,9 @@ module.exports = {
         'prefer-exponentiation-operator': 'error',
         'no-dupe-else-if': 'error',
         'no-constructor-return': 'error',
-        'no-useless-backreference': 'error',
-        'default-case-last': 'error',
-        'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 1024, 60, 24], 'ignoreArrayIndexes': true, 'enforceConst': true }],
+        'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 2, 1024, 60, 24], 'ignoreArrayIndexes': true, 'enforceConst': true }],
 
         // Possible errors
-        'comma-dangle': ['error', 'never'],
         'no-cond-assign': ['error', 'always'],
         'no-constant-condition': 'error',
         'no-control-regex': 'error',
@@ -80,7 +74,6 @@ module.exports = {
         'use-isnan': 'error',
         'valid-typeof': 'error',
         'no-unexpected-multiline': 0,
-        'max-lines-per-function': ['error', {'max': 100, 'skipBlankLines': true, 'skipComments': true}],
         'require-atomic-updates': 'error',
         'no-async-promise-executor': 'error',
         'no-misleading-character-class': 'error',
@@ -110,7 +103,6 @@ module.exports = {
         'no-labels': 'error',
         'no-lone-blocks': 'error',
         'no-loop-func': 'error',
-        // 'no-multi-spaces': ['error', { exceptions: { 'VariableDeclarator': true, 'ImportDeclaration': true } }],
         'no-multi-str': 'error',
         'no-native-reassign': 'error',
         'no-new': 'error',
@@ -125,7 +117,6 @@ module.exports = {
         'no-self-compare': 'error',
         'no-sequences': 'error',
         'no-throw-literal': 'error',
-        'no-unused-expressions': 'error',
         'no-useless-call': 'error',
         'no-with': 'error',
         'radix': 'error',
@@ -168,11 +159,6 @@ module.exports = {
         'no-new-require': 'error',
 
         // Stylistic
-        'array-bracket-spacing': ['error', 'always', {
-            'singleValue': true,
-            'objectsInArrays': true,
-            'arraysInArrays': true
-        }],
         'newline-after-var': ['error', 'always'],
         'brace-style': ['error', '1tbs'],
         'camelcase': ['error', { 'properties': 'always' }],
@@ -180,21 +166,9 @@ module.exports = {
         'comma-style': ['error', 'last'],
         'computed-property-spacing': ['error', 'never'],
         'eol-last': 'error',
-        'func-names': 1,
-        'func-style': ['error', 'declaration'],
-        'indent': ['error', 4, { 'SwitchCase': 1 }],
+        // 'func-style': ['error', 'declaration'],
+        'indent': ['error', 2],
         'jsx-quotes': ['error', 'prefer-single'],
-        'key-spacing': ['error', {
-            'singleLine': {
-                'beforeColon': false,
-                'afterColon': true
-            },
-            'multiLine': {
-                'beforeColon': true,
-                'afterColon': true,
-                'align': 'colon'
-            }
-        }],
         'linebreak-style': ['error', 'unix'],
         'max-len': ['error', 120, 4, {
             'ignoreUrls': true,

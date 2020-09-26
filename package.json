@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-seedium",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "Seedium's ESLint configuration",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/seedium/eslint-config-seedium#readme",
   "peerDependencies": {
-    "eslint": "^7.9.0"
+    "eslint": "^7.9.0",
+    "eslint-plugin-react": "^7.21.2"
   }
 }
