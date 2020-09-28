@@ -5,12 +5,10 @@ module.exports = {
     'rules': {
         'react/jsx-boolean-value': 'error',
         'react/jsx-closing-bracket-location': 'error',
-        'react/jsx-curly-spacing': ['error', 'never'],
         'react/jsx-handler-names': 'error',
         'react/jsx-indent-props': ['error', 2],
         'react/jsx-indent': ['error', 2],
         'react/jsx-key': 'error',
-        'react/jsx-max-props-per-line': ['error', {maximum: 3}],
         'react/jsx-no-bind': ['error', {
             'ignoreRefs': true,
             'allowArrowFunctions': true
@@ -36,18 +34,18 @@ module.exports = {
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/self-closing-comp': 'error',
-        'react/sort-comp': ['error', {
-            'order': [
-                'lifecycle',
-                '/^handle.+$/',
-                '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-                'everything-else',
-                '/^render.+$/',
-                'render'
-            ]
-        }],
+        // 'react/sort-comp': ['error', {
+        //     'order': [
+        //         'lifecycle',
+        //         '/^handle.+$/',
+        //         '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+        //         'everything-else',
+        //         '/^render.+$/',
+        //         'render'
+        //     ]
+        // }],
         'react/style-prop-object': 'error',
-        'react/no-unused-prop-types': 'off',
+        'react/no-unused-prop-types': 'error',
         'react/no-unescaped-entities': 'error',
         'react/no-children-prop': 'error',
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
