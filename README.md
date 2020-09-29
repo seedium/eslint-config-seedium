@@ -3,12 +3,15 @@ eslint-config-seedium
 
 Eslint config that we use in Seedium
 
-## How to use
+### How to use
 
 1. Install config with eslint and eslint plugins
 
 ```
-npm install --save-dev eslint-config-seedium eslint eslint-plugin-react babel-eslint
+npm install -D eslint-config-seedium eslint eslint-plugin-react babel-eslint
+```
+```
+yarn add --dev eslint-config-seedium eslint eslint-plugin-react babel-eslint
 ```
 
 
@@ -19,3 +22,5 @@ npm install --save-dev eslint-config-seedium eslint eslint-plugin-react babel-es
     "extends": "seedium"
 }
 ```
+
+### Using with prettier
