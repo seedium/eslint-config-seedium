@@ -169,7 +169,6 @@ module.exports = {
         'indent': ['error', 2],
         'jsx-quotes': ['error', 'prefer-single'],
         'linebreak-style': ['error', 'unix'],
-        'max-len': ['error', 70],
         'max-nested-callbacks': ['error', 4],
         'new-parens': 'error',
         'no-array-constructor': 'error',
