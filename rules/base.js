@@ -24,7 +24,7 @@ module.exports = {
             'spread': true,
             'superInFunctions': true,
             'templateStrings': true,
-            'jsx': true
+            'jsx': true,
         },
     },
     'rules':{
@@ -47,7 +47,7 @@ module.exports = {
         'prefer-exponentiation-operator': 'error',
         'no-dupe-else-if': 'error',
         'no-constructor-return': 'error',
-        'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 2, 1024, 60, 24], 'ignoreArrayIndexes': true, 'enforceConst': true }],
+        'no-magic-numbers': ['error', { 'ignore': [-1, 0, 1, 2, 1024, 60, 24], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': true, 'enforceConst': true }],
 
         // Possible errors
         'no-cond-assign': ['error', 'always'],
@@ -147,7 +147,7 @@ module.exports = {
         'no-shadow': 'error',
         'no-undef-init': 'error',
         'no-undef': 'error',
-        'no-unused-vars': 'error',
+        'no-unused-vars': ['error', { "varsIgnorePattern": "React" }],
 
         // Node.js
         'callback-return': 'error',
@@ -190,7 +190,6 @@ module.exports = {
         'space-before-blocks': 'error',
         'space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never' }],
         'space-in-parens': ['error', 'never'],
-        'space-infix-ops': 'error',
         'space-unary-ops': ['error', { 'words': true, 'nonwords': false }],
         'spaced-comment': ['error', 'always'],
         'no-return-await': 'error',
@@ -205,5 +204,12 @@ module.exports = {
             'error',
             { 'blankLine': 'always', 'prev': 'block-like', 'next': '*' }
         ]
-    }
+    },
+    'overrides': [{
+        'files': ['*.styled.ts'],
+        'rules': {
+            'no-magic-numbers': 'off',
+            'no-undef': 'off'
+        }
+    }]
 };

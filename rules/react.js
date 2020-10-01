@@ -1,7 +1,5 @@
 module.exports = {
-    'plugins': [
-        'react'
-    ],
+    'plugins': ['react'],
     'rules': {
         'react/jsx-boolean-value': 'error',
         'react/jsx-closing-bracket-location': 'error',
@@ -10,15 +8,19 @@ module.exports = {
         'react/jsx-indent': ['error', 2],
         'react/jsx-key': 'error',
         'react/jsx-no-bind': ['error', {
-            'ignoreRefs': true,
-            'allowArrowFunctions': true
+            ignoreRefs: true,
+            allowArrowFunctions: true
         }],
         'react/jsx-no-duplicate-props': 'error',
         'react/jsx-no-undef': 'error',
         'react/jsx-pascal-case': 'error',
         'react/jsx-uses-react': 'off',
         'react/jsx-uses-vars': 'error',
-        'react/jsx-wrap-multilines':  ['error', {declaration: true, assignment: true, return: true}],
+        'react/jsx-wrap-multilines':  ['error', {
+            declaration: true,
+            assignment: true,
+            return: true
+        }],
         'react/no-find-dom-node': 'error',
         'react/no-render-return-value': 'error',
         'react/require-render-return': 'error',
