@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-seedium",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Seedium's ESLint configuration",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "eslint",
     "eslintconfig"
   ],
-  "author": "Seedium",
+  "author": "Seedium Frontend Team",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/seedium/eslint-config-seedium/issues"
