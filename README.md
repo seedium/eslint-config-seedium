@@ -8,10 +8,10 @@ Eslint config that we use in Seedium
 1. Install config with eslint and eslint plugins
 
 ```
-npm install -D eslint-config-seedium eslint eslint-plugin-react babel-eslint
+npm install -D eslint-config-seedium eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 ```
-yarn add --dev eslint-config-seedium eslint eslint-plugin-react babel-eslint
+yarn add --dev eslint-config-seedium eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 
