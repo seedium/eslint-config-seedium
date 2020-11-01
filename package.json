@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-seedium",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "description": "Seedium's ESLint configuration",
   "main": "index.js",
   "scripts": {
