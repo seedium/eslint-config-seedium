@@ -150,7 +150,8 @@ module.exports = {
         'no-shadow': 'error',
         'no-undef-init': 'error',
         'no-undef': 'error',
-        'no-unused-vars': ['error', { "varsIgnorePattern": "React" }],
+        "no-unused-vars": "off",
+        '@typescript-eslint/no-unused-vars': ['error', { "varsIgnorePattern": "React" }],
 
         // Node.js
         'callback-return': 'error',
