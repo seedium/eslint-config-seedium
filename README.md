@@ -26,11 +26,11 @@ yarn add --dev eslint-config-seedium eslint eslint-plugin-react @typescript-esli
 ### Using with prettier
 To use with prettier you should follow this steps:
 
-1. Create file `prettierc.js`
+1. Create file `.prettierc`
 
-2. You can configure prettier as you like or just use our configuration:
+2. Our configuration:
 ```
-module.exports = {
+{
   singleQuote: true,
   semi: true,
   jsxSingleQuote: true,
