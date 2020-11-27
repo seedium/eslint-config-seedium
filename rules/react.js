@@ -30,7 +30,7 @@ module.exports = {
         'react/no-did-update-set-state': 'error',
         'react/no-direct-mutation-state': 'error',
         'react/no-is-mounted': 'error',
-        'react/no-multi-comp': 'error',
+        'react/no-multi-comp': ['error', { 'ignoreStateless': true }],
         'react/no-unknown-property': 'error',
         'react/prefer-es6-class': 'error',
         'react/prop-types': 'off',
